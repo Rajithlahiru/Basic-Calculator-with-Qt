@@ -20,6 +20,12 @@ public:
 private slots:
     void on_btnPlus_clicked();
 
+    void on_btnMinus_clicked();
+
+    void on_btnMultiply_clicked();
+
+    void on_btnDivide_clicked();
+
 private:
     Ui::MainWindow *ui;
 };

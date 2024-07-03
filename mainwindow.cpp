@@ -24,3 +24,33 @@ void MainWindow::on_btnPlus_clicked()
     ui->txtResult->setText(QString::number(result));
 }
 
+
+void MainWindow::on_btnMinus_clicked()
+{
+    firstNum = ui->txtFirstNum->text().toInt();
+    secondNum = ui->txtSecondNum->text().toInt();
+    result = firstNum - secondNum;
+
+    ui->txtResult->setText(QString::number(result));
+}
+
+
+void MainWindow::on_btnMultiply_clicked()
+{
+    firstNum = ui->txtFirstNum->text().toInt();
+    secondNum = ui->txtSecondNum->text().toInt();
+    result = firstNum * secondNum;
+
+    ui->txtResult->setText(QString::number(result));
+}
+
+
+void MainWindow::on_btnDivide_clicked()
+{
+    firstNum = ui->txtFirstNum->text().toInt();
+    secondNum = ui->txtSecondNum->text().toInt();
+    result = firstNum / secondNum;
+
+    ui->txtResult->setText(QString::number(result));
+}
+
